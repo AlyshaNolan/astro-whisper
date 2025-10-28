@@ -11,6 +11,7 @@ tags:
   - layout
   - design
   - tutorial
+image: https://placehold.co/600x400
 ---
 New content
 
