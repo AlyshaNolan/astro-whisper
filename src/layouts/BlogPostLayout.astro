@@ -11,12 +11,14 @@ type Props = CollectionEntry<'blog'>['data'] & {
 }
 
 const {
+    frontmatter: {
+      image
+    },
 	title,
 	description,
 	pubDate,
 	updatedDate,
 	coverImageCredit,
-    image,
 	headings,
 	slug,
 	remarkPluginFrontmatter,
