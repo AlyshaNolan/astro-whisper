@@ -1,23 +1,29 @@
 ---
-title: 'CSS Grid vs Flexbox: When to Use What (Finally Explained)'
-description: 'Stop overthinking layout choices. Learn when to reach for Grid, when to use Flexbox, and when either works fine.'
-pubDate: 'Sep 15 2025'
-category: 'CSS'
-tags: ['css', 'frontend', 'layout', 'design', 'tutorial']
+title: New title
+description: >-
+  Stop overthinking layout choices. Learn when to reach for Grid, when to use
+  Flexbox, and when either works fine.
+pubDate: 2025-09-15T12:00:00+12:00
+category: CSS
+tags:
+  - css
+  - frontend
+  - layout
+  - design
+  - tutorial
 ---
-
-I spent years confused about when to use Grid vs Flexbox. Then it clicked: **Grid for 2D, Flexbox for 1D**. But that's oversimplified. Let's dig deeper.
+New content
 
 ## The One-Liner
 
-- **Flexbox:** One direction (row OR column)
-- **Grid:** Two directions (rows AND columns)
+* **Flexbox:** One direction (row OR column)
+* **Grid:** Two directions (rows AND columns)
 
 But real layouts are messier than theory, so here's my practical decision tree.
 
 ## Use Flexbox When...
 
-### 1. You Have a Row or Column of Things
+### 1\. You Have a Row or Column of Things
 
 ```css
 /* Navigation bar */
@@ -35,12 +41,13 @@ But real layouts are messier than theory, so here's my practical decision tree.
 ```
 
 **Perfect for:**
-- Navigation menus
-- Button groups
-- Card content (title, description, button stacked)
-- Toolbars
 
-### 2. You Want Items to Wrap
+* Navigation menus
+* Button groups
+* Card content (title, description, button stacked)
+* Toolbars
+
+### 2\. You Want Items to Wrap
 
 ```css
 .tags {
@@ -52,7 +59,7 @@ But real layouts are messier than theory, so here's my practical decision tree.
 
 Tags, chips, badges—they flow like text and wrap naturally.
 
-### 3. You Need Items to Grow/Shrink
+### 3\. You Need Items to Grow/Shrink
 
 ```css
 .layout {
@@ -70,7 +77,7 @@ Tags, chips, badges—they flow like text and wrap naturally.
 
 Flexbox excels at distributing space.
 
-### 4. You're Centering Something
+### 4\. You're Centering Something
 
 ```css
 .center-me {
@@ -84,7 +91,7 @@ The classic. Works every time.
 
 ## Use Grid When...
 
-### 1. You Have Actual Rows AND Columns
+### 1\. You Have Actual Rows AND Columns
 
 ```css
 .dashboard {
@@ -96,12 +103,13 @@ The classic. Works every time.
 ```
 
 **Perfect for:**
-- Dashboards
-- Photo galleries
-- Card grids with consistent alignment
-- Form layouts
 
-### 2. You Need Items to Line Up Across Rows
+* Dashboards
+* Photo galleries
+* Card grids with consistent alignment
+* Form layouts
+
+### 2\. You Need Items to Line Up Across Rows
 
 ```css
 .product-grid {
@@ -113,7 +121,7 @@ The classic. Works every time.
 
 All cards stay aligned even with different content heights.
 
-### 3. You're Creating Complex Layouts
+### 3\. You're Creating Complex Layouts
 
 ```css
 .layout {
@@ -132,7 +140,7 @@ All cards stay aligned even with different content heights.
 
 Named areas make complex layouts readable.
 
-### 4. You Want Responsive Without Media Queries
+### 4\. You Want Responsive Without Media Queries
 
 ```css
 .grid {
@@ -149,6 +157,7 @@ This auto-responds to screen size. Magic! ✨
 ### Card with Content
 
 **Flexbox approach:**
+
 ```css
 .card {
   display: flex;
@@ -161,6 +170,7 @@ This auto-responds to screen size. Magic! ✨
 ```
 
 **Grid approach:**
+
 ```css
 .card {
   display: grid;
@@ -231,14 +241,16 @@ Grid keeps everything aligned perfectly.
 ## The Gotchas
 
 ### Flexbox
-- Can't easily align items across rows
-- Wrapping can create uneven gaps
-- Source order matters more
+
+* Can't easily align items across rows
+* Wrapping can create uneven gaps
+* Source order matters more
 
 ### Grid
-- Steeper learning curve
-- Overkill for simple one-directional layouts
-- Browser support is great now, but check your needs
+
+* Steeper learning curve
+* Overkill for simple one-directional layouts
+* Browser support is great now, but check your needs
 
 ## Can You Use Both?
 
@@ -271,23 +283,25 @@ Use the right tool for each job!
 ## Quick Reference
 
 **Flexbox:**
-- `justify-content` - Main axis (horizontal by default)
-- `align-items` - Cross axis (vertical by default)
-- `gap` - Space between items
-- `flex` - How items grow/shrink
+
+* `justify-content` - Main axis (horizontal by default)
+* `align-items` - Cross axis (vertical by default)
+* `gap` - Space between items
+* `flex` - How items grow/shrink
 
 **Grid:**
-- `grid-template-columns` - Column sizing
-- `grid-template-rows` - Row sizing
-- `gap` - Space between cells
-- `grid-area` - Named areas
+
+* `grid-template-columns` - Column sizing
+* `grid-template-rows` - Row sizing
+* `gap` - Space between cells
+* `grid-area` - Named areas
 
 ## Tools I Use
 
-- **Firefox DevTools** - Best Grid inspector
-- **Chrome DevTools** - Great Flexbox inspector
-- **CSS Grid Generator** - gridbyexample.com
-- **Flexbox Froggy** - Learn Flexbox by playing
+* **Firefox DevTools** - Best Grid inspector
+* **Chrome DevTools** - Great Flexbox inspector
+* **CSS Grid Generator** - gridbyexample.com
+* **Flexbox Froggy** - Learn Flexbox by playing
 
 ## Conclusion
 
