@@ -1,4 +1,5 @@
 ---
+image: https://placehold.co/600x400
 title: New title
 description: >-
   Stop overthinking layout choices. Learn when to reach for Grid, when to use
@@ -11,7 +12,6 @@ tags:
   - layout
   - design
   - tutorial
-image: https://placehold.co/600x400
 ---
 New content
 
