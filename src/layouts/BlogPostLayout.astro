@@ -164,11 +164,9 @@ const categorySlug = category?.toLowerCase().replace(/\s+/g, '-') || 'uncategori
                         {
 							 image && (
 								<div class="rounded-2xl overflow-hidden shadow-xl">
-									<Image
+									<img
                                       	data-editable="image"
-                                    	data-prop-src="heroImage"
-                                    	data-prop-alt="imageAlt"
-                                    	data-prop-title="imageTitle"
+                                    	data-prop-src="image"
 										src={image}
 										alt={`Cover image for ${title}`}
 										class="w-full"
