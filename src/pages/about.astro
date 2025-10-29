@@ -38,6 +38,8 @@ const topics = [
 	'Web Performance',
 	'Dev Tools & Productivity',
 ]
+
+const newsletter_heading = "Sign up here"
 ---
 
 <BaseLayout {...about}>
@@ -154,7 +156,7 @@ const topics = [
 			<!-- Newsletter Section -->
 			<section class="pt-12 border-t border-border dark:border-border-dark">
 				<div class="max-w-3xl mx-auto">
-                    <NewsletterSignup heading="Sign up" />
+                    <NewsletterSignup heading="{newsletter_heading}" />
 				</div>
 			</section>
 		</div>
