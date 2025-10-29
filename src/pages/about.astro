@@ -114,7 +114,7 @@ const topics = [
 							<nav aria-label="Social media links" class="space-y-3" data-editable="array" data-prop="socials">
 								{SocialLinks.map((link) => (
                                   <div data-editable="array-item">
-        								<a href="{link.url}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl hover:bg-primary/5 dark:hover:bg-primary-dark/5 transition-colors group" aria-label="{`Visit" my="" ${link.name}="" profile`}="">
+        								<a href="{link.url}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl hover:bg-primary/5 dark:hover:bg-primary-dark/5 transition-colors group" >
         								</a>
         								<icon name={ link.name==='GitHub' ? 'mdi:github' : 'mdi:linkedin' link.name.includes('twitter') || link.name.includes('x') 'mdi:twitter' 'mdi:instagram' 'mdi:web' } class="w-5 h-5 text-secondary dark:text-secondary-dark group-hover:text-primary dark:group-hover:text-primary-dark transition-colors" aria-hidden="true">
         									<span class="text-secondary dark:text-secondary-dark group-hover:text-primary dark:group-hover:text-primary-dark transition-colors" data-editable="text" data-prop="link.name">
