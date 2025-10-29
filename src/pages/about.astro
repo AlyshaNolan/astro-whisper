@@ -42,7 +42,6 @@ const topics = [
 
 <BaseLayout {...about}>
 	<main class="app-container pt-32 pb-20" data-editable="source" data-path="/src/pages/about.astro" data-key="about">
-		<p>
 		<div class="space-y-16">
 			<!-- Header Section -->
 			<header class="space-y-6">
@@ -73,21 +72,21 @@ const topics = [
 						<h2 class="text-3xl font-bold">What I Bring to the Table</h2>
 						<div class="grid md:grid-cols-2 gap-6" data-editable="array" data-prop="expertise">
 							{expertise.map((skill) => (
-							<div class="p-6 rounded-2xl bg-surface dark:bg-surface-dark border border-border dark:border-border-dark" data-editable="array-item">
-								<div class="flex items-start gap-4">
-									<div class="p-3 rounded-xl bg-primary/10 dark:bg-primary-dark/10">
-										<icon name={skill.icon} class="w-6 h-6 text-primary dark:text-primary-dark" aria-hidden="true">
-										</icon>
-										<p></p>
-									</div>
-									<div class="space-y-2">
-										<h3 class="text-xl font-semibold" data-editable="text" data-prop="skill.title">{skill.title}</h3>
-										<p class="text-secondary dark:text-secondary-dark" data-editable="text" data-prop="skill.description">
-											{skill.description}
-										</p>
-									</div>
-								</div>
-							</div>
+    							<div class="p-6 rounded-2xl bg-surface dark:bg-surface-dark border border-border dark:border-border-dark" data-editable="array-item">
+    								<div class="flex items-start gap-4">
+    									<div class="p-3 rounded-xl bg-primary/10 dark:bg-primary-dark/10">
+    										<icon name={skill.icon} class="w-6 h-6 text-primary dark:text-primary-dark" aria-hidden="true">
+    										</icon>
+    										<p></p>
+    									</div>
+    									<div class="space-y-2">
+    										<h3 class="text-xl font-semibold" data-editable="text" data-prop="skill.title">{skill.title}</h3>
+    										<p class="text-secondary dark:text-secondary-dark" data-editable="text" data-prop="skill.description">
+    											{skill.description}
+    										</p>
+    									</div>
+    								</div>
+    							</div>
 							))}
 						</div>
 					</section>
@@ -95,11 +94,11 @@ const topics = [
 					<!-- Topics I Write About -->
 					<section class="space-y-4">
 						<h2 class="text-3xl font-bold">My Favorite Tech Topics</h2>
-						<div class="flex flex-wrap gap-3" data-editable="array" data-prop="topics"> >
+						<div class="flex flex-wrap gap-3" data-editable="array" data-prop="topics">
 							{topics.map((tag) => (
-							<span class="px-4 py-2 rounded-full bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark border border-primary/20 dark:border-primary-dark/20" data-editable="array-item">
-								{tag}
-							</span>
+    							<span class="px-4 py-2 rounded-full bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark border border-primary/20 dark:border-primary-dark/20" data-editable="array-item">
+    								{tag}
+    							</span>
 							))}
 						</div>
 					</section>
@@ -113,18 +112,18 @@ const topics = [
 							<h3 class="text-2xl font-bold">Get in Touch</h3>
 		
 							<!-- Social Links -->
-							<nav aria-label="Social media links" class="space-y-3" data-editable="array" data-prop="socials"> >
+							<nav aria-label="Social media links" class="space-y-3" data-editable="array" data-prop="socials">
 								{SocialLinks.map((link) => (
-                                <div data-editable="array-item">
-    								<a href="{link.url}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl hover:bg-primary/5 dark:hover:bg-primary-dark/5 transition-colors group" aria-label="{`Visit" my="" ${link.name}="" profile`}="">
-    								</a>
-    								<icon name={ link.name==='GitHub' ? 'mdi:github' : 'mdi:linkedin' link.name.includes('twitter') || link.name.includes('x') 'mdi:twitter' 'mdi:instagram' 'mdi:web' } class="w-5 h-5 text-secondary dark:text-secondary-dark group-hover:text-primary dark:group-hover:text-primary-dark transition-colors" aria-hidden="true">
-    									<span class="text-secondary dark:text-secondary-dark group-hover:text-primary dark:group-hover:text-primary-dark transition-colors" data-editable="text" data-prop="link.name">
-    										{link.name}
-    									</span>
-    								</icon>
-    								<p></p>
-                                  </div>
+                                  <div data-editable="array-item">
+        								<a href="{link.url}" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl hover:bg-primary/5 dark:hover:bg-primary-dark/5 transition-colors group" aria-label="{`Visit" my="" ${link.name}="" profile`}="">
+        								</a>
+        								<icon name={ link.name==='GitHub' ? 'mdi:github' : 'mdi:linkedin' link.name.includes('twitter') || link.name.includes('x') 'mdi:twitter' 'mdi:instagram' 'mdi:web' } class="w-5 h-5 text-secondary dark:text-secondary-dark group-hover:text-primary dark:group-hover:text-primary-dark transition-colors" aria-hidden="true">
+        									<span class="text-secondary dark:text-secondary-dark group-hover:text-primary dark:group-hover:text-primary-dark transition-colors" data-editable="text" data-prop="link.name">
+        										{link.name}
+        									</span>
+        								</icon>
+        								<p></p>
+                                    </div>
 								))}
 							</nav>
 		
@@ -146,6 +145,5 @@ const topics = [
 				</div>
 			</section>
 		</div>
-		</p>
 	</main>
 </BaseLayout>
