@@ -1,11 +1,13 @@
 ---
 import { Icon } from 'astro-icon/components'
+
+const { heading } = Astro.props
 ---
 
 <div class="newsletter-signup">
 	<div class="space-y-6">
 		<div class="space-y-3">
-			<h2 class="text-3xl font-bold">Stay Updated</h2>
+			<h2 class="text-3xl font-bold">{heading}</h2>
 			<p class="text-lg text-secondary dark:text-secondary-dark">
 				Get the latest articles and insights delivered directly to your inbox. No spam, just quality content.
 			</p>
