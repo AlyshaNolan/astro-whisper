@@ -4,6 +4,7 @@ import { about } from '@/config/page'
 import { SocialLinks } from '@/config/site'
 import { Icon } from 'astro-icon/components'
 import NewsletterSignup from '@/components/NewsletterSignup.astro'
+import '../scripts/register-components.js';
 
 const expertise = [
 	{
@@ -39,9 +40,6 @@ const topics = [
 	'Dev Tools & Productivity',
 ]
 ---
-<script>
-  import '../scripts/register-components.js';
-</script>
 
 <BaseLayout {...about}>
 	<main class="app-container pt-32 pb-20">
