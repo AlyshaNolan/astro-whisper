@@ -5,6 +5,7 @@ collections_config:
   blog:
     path: src/content/blog
     icon: event_available
+    url: '[full_slug]/'
     disable_url: false
     disable_add: false
     disable_add_folder: false
